@@ -1,0 +1,16 @@
+syntax = "proto3";
+package pb;
+
+option go_package = "./pb";
+
+message WineReviewRequest {
+  string review = 1;
+}
+
+message WineReviewResponse {
+  string variety = 1;
+}
+
+service WineClassifierService {
+  rpc GetWineVariety(WineReviewRequest) returns (WineReviewResponse);
+}
