@@ -3,3 +3,6 @@ An attemp to establish a gRPC connection between a python server and golang clie
 
 
 the directory structure:
+client.go
+
+
